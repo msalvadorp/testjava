@@ -34,4 +34,11 @@ public class CustomerController
 
         return ResponseEntity.ok(cardService.GetBalance("ABCD"));
     }
+
+    @GetMapping(path = "/card")
+    public HttpEntity<String> getCard(){
+
+        return ResponseEntity.ok("card asdasdasd");
+    }
+
 }
