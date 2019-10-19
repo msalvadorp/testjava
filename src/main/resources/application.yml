@@ -1,0 +1,31 @@
+logging.level:
+  root: INFO
+  test.demo1: DEBUG
+  org.springframework.web: INFO
+  #com.microsoft.azure: INFO
+  #org.apache.http: INFO
+
+server:
+  port: 8082
+
+smtp:
+  port: 2020
+  hostname: mail.google.com
+  from: miguel@hotmail.com
+
+accounts:
+  smtp:
+    port: 9095
+    hostname: mail.office.com
+    from: demo@gmail.com
+    credentials:
+      username: jperez
+      password: 123123
+    cc:
+      - miguel
+      - manuel
+      - joel
+    header:
+      app1: tipo
+      app2: json
+      app3: bearer

@@ -41,4 +41,9 @@ public class CustomerController
         return ResponseEntity.ok("card asdasdasd");
     }
 
+    @GetMapping(path = "/email")
+    public HttpEntity<String> sendEmail(){
+
+        return ResponseEntity.ok(cardService.enviarCorreo(("test")));
+    }
 }

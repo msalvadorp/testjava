@@ -31,4 +31,12 @@ public class AccountController {
         return ResponseEntity.ok("demo");
     }
 
+
+    @GetMapping(path = "/correo")
+    public HttpEntity<String> enviarCorreo(){
+
+        return ResponseEntity.ok(customerService.enviarCorreo2("mensaje"));
+    }
+
+
 }

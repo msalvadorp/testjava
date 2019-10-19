@@ -12,4 +12,9 @@ public class CustomerServiceImpl implements  CustomerService {
     public String toUpper(String dato) {
         return dato.toUpperCase();
     }
+
+    @Override
+    public String enviarCorreo2(String mensaje) {
+        return "Demo";
+    }
 }
